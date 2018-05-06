@@ -1,0 +1,120 @@
+
+* {
+  box-sizing: border-box;
+  color: #000;
+  font-family: Poppins, Helvetica, Verdana, Arial, sans-serif;
+}
+
+html {
+  background: #FECCCD;
+  min-height: 300vh;
+  font-size: 22px;
+  font-family: Poppins, Helvetica, Verdana, Arial, sans-serif;
+}
+
+code {
+  margin: 1px 5px;
+  padding: 2px 5px 1px 5px;
+  font-family: monospace;
+  border-radius: 5px;
+  border: 1px dotted #fff;
+}
+
+.gallery{
+
+  background-color: #fff;
+  text-align: center;
+  height: 1440px;
+
+
+
+}
+
+.a {
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top: 20px;
+  font-family: Poppins, roboto, Helvetica, Verdana, Arial, sans-serif;
+
+}
+
+.b {
+  text-align: center;
+  padding-top: 20px;
+  font-family: Poppins, roboto, Helvetica, Verdana, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+
+}
+
+
+p {
+
+  margin: 25px 25px;
+}
+
+h1 {
+  color: #000;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2 {
+
+  color: #000;
+  text-align: center;
+  margin-top: 150px;
+  font-weight: bolder;
+
+}
+h4 {
+
+  color: #000;
+  text-align: center;
+  font-weight: bolder;
+
+}
+
+.grid > * {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 20px;
+  /*margin: 10px;*/
+  text-align: center;
+}
+
+.grid a {
+    display: block;
+}
+
+.grid > a:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  transition: background-color ease 0.5s;
+}
+
+.outlined {
+  height: 200px;
+  border: 1px solid #000;
+  margin-bottom: 50px;
+}
+
+.parallax {
+
+    /* The image used */
+    background-image: url("../imgs/background@3x.png");
+    width: 100%;
+    /* Set a specific height */
+    min-height: 1024px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
