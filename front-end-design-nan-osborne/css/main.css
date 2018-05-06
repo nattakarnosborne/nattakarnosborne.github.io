@@ -2,8 +2,8 @@
 .grid{
 
 display: grid;
-grid-template: 260px auto 260px
-/ 200px auto 200px;
+grid-template: 260px 260px 260px
+/ 200px 200px 200px;
 grid-gap: 10px;
 justify-content: center;
 
