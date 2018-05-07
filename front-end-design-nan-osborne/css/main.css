@@ -1,14 +1,203 @@
 /* grid */
-.grid{
 
-display: grid;
-grid-template: 260px 260px 260px
-/ 200px 200px 200px;
-grid-gap: 10px;
-justify-content: center;
+
+@media screen and (min-width: 320px) {
+  .grid {
+    display: grid;
+    grid-template: 290px 290px
+    / 230px 230px;
+    grid-gap: 5px;
+    justify-content: center;
+  }
+
+  .grid img{
+
+    width: 230px;
+    height: 290px;
+    background-size: cover;
+
+  }
+}
+
+
+@media screen and (min-width: 480px) {
+  .grid {
+    display: grid;
+    grid-template: 290px 290px
+    / 230px 230px;
+    grid-gap: 5px;
+    justify-content: center;
+  }
+
+  .grid img{
+
+    width: 230px;
+    height: 290px;
+    background-size: cover;
+
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template: 290px 290px
+    / 230px 230px;
+    grid-gap: 5px;
+    justify-content: center;
+  }
+
+  .grid img{
+
+    width: 230px;
+    height: 290px;
+    background-size: cover;
+
+  }
+
+  .parallax {
+      display: flex;
+      /* The image used */
+      background-image: url("../imgs/background@3x.png");
+      width: 100%;
+      /* Set a specific height */
+      min-height: 300px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment:inherit;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
 
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+  .grid {
+    display: grid;
+    grid-template: 360px 360px
+    / 300px 300px;
+    grid-gap: 5px;
+    justify-content: center;
+  }
+
+  .grid img{
+
+    width: 300px;
+    height: 360px;
+    background-size: cover;
+
+  }
+
+  .parallax {
+      display: flex;
+      /* The image used */
+      background-image: url("../imgs/background@3x.png");
+      width: 100%;
+      /* Set a specific height */
+      min-height: 1024px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment:inherit;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+  .grid {
+    display: grid;
+    grid-template: 360px 360px 360px
+    / 300px 300px 300px;
+    grid-gap: 5px;
+    justify-content: center;
+  }
+
+  .grid img{
+
+    width: 300px;
+    height: 360px;
+    background-size: cover;
+
+  }
+
+  .parallax {
+      display: flex;
+      /* The image used */
+      background-image: url("../imgs/background@3x.png");
+      width: 100%;
+      /* Set a specific height */
+      min-height: 1440px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: inherit;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
+  .grid{
+
+  display: grid;
+  grid-template: 260px 260px 260px 260px
+  / 200px 200px 200px 200px;
+  grid-gap: 5px;
+  justify-content: center;
+
+
+  }
+  .grid img{
+
+    width: 200px;
+    height: 260px;
+    background-size: cover;
+
+
+  }
+
+  .parallax {
+      display: flex;
+      /* The image used */
+      background-image: url("../imgs/background@3x.png");
+      width: 100%;
+      /* Set a specific height */
+      min-height: 1440px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: inherit;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+}
+.parallax {
+    display: flex;
+    /* The image used */
+    background-image: url("../imgs/background@3x.png");
+    width: 100%;
+    /* Set a specific height */
+    min-height: 1440px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 .header {
@@ -20,23 +209,12 @@ justify-content: center;
 }
 
 
-
-.grid img{
-
-  width: 200px;
-  height: 260px;
-  background-size: cover;
-
-
-}
-
-
 * {
   box-sizing: border-box;
 }
 
 .row > .column {
-  padding: 0 8px;
+  padding: 8 8px;
 }
 
 .row:after {
@@ -55,13 +233,13 @@ justify-content: center;
 /* The Modal (background) */
 .modal {
   display: inline-block;
-  position: fixed;
+  position: relative;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 50px;
   left: 0;
   top: 0;
   width: 100%;
-  height: 1500px;
+  height: auto;
   overflow: auto;
   background-color: white;
 }
@@ -100,6 +278,9 @@ justify-content: center;
   color: #fff;
 
 }
+
+
+
 
 /* Next & previous buttons */
 .prev,
@@ -148,7 +329,7 @@ img {
 .caption-container {
   text-align: center;
   background-color: white;
-  padding: 2px 16px;
+  padding: 5px 20px;
   color: white;
 }
 

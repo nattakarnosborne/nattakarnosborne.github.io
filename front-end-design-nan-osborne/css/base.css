@@ -24,7 +24,9 @@ code {
 
   background-color: #fff;
   text-align: center;
-  height: 1440px;
+  height: 1400px;
+  position:relative;
+
 
 
 
@@ -100,19 +102,4 @@ h4 {
   height: 200px;
   border: 1px solid #000;
   margin-bottom: 50px;
-}
-
-.parallax {
-    display: flex;
-    /* The image used */
-    background-image: url("../imgs/background@3x.png");
-    width: 100%;
-    /* Set a specific height */
-    min-height: 1024px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
