@@ -34,17 +34,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
-
-
-$('#myTabs a').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
-
-
-$(document).ready(function() {
-    $('#Carousel').carousel({
-        interval: 5000
-    })
-});
