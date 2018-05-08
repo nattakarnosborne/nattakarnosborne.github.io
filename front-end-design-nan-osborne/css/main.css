@@ -65,8 +65,8 @@
   }
   .gallery img{
 
-    width: 150;
-    height: 100px;
+    width: 25%;
+    height: 80px;
     background-size: cover;
     padding: 5px;
     margin: 0;
@@ -178,8 +178,8 @@
   }
   .gallery img{
 
-    width: 150;
-    height: 100px;
+    width: 25%;
+    height: 80px;
     background-size: cover;
     padding: 5px;
     margin: 0;
