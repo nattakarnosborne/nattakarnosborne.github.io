@@ -65,8 +65,8 @@
   }
   .gallery img{
 
-    width: 25%;
-    height: 80px;
+    width: auto;
+    height: 150px;
     background-size: cover;
     padding: 5px;
     margin: 0;
@@ -178,8 +178,8 @@
   }
   .gallery img{
 
-    width: 25%;
-    height: 80px;
+    width: auto;
+    height: 150px;
     background-size: cover;
     padding: 5px;
     margin: 0;
@@ -218,7 +218,7 @@
   }
 
   .svg-image{
-    width: 380px;
+    width: 30%;
     height: auto;
     background: #FECCCD;
     align-self: center;
