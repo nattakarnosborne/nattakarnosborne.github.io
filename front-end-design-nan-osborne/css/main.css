@@ -1,351 +1,686 @@
-/* grid */
+  body {
+    color: #000;
+    font-family: 'poppins';
+    text-align: center;
+    object-fit:cover;
+  }
+  @media screen and (min-width: 320px){
 
+  #content{
 
-@media screen and (min-width: 320px) {
-  .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-column-gap: 5px;
+      max-width: 320px;
+      margin: 0 auto;
+      grid-template-areas:
+      "header header header header"
+      ". main main ."
+      "footer footer footer footer";
+
+  }
+  #content div{
+    background: #fff;
     display: grid;
-    grid-template: 290px 290px
-    / 230px 230px;
-    grid-gap: 5px;
-    justify-content: center;
-  }
-
-  .grid img{
-
-    width: 230px;
-    height: 290px;
-    background-size: cover;
 
   }
-}
+  #content div:nth-child(even){
+    background: #fff;
+  }
 
+  #content > *{
 
-@media screen and (min-width: 480px) {
-  .grid {
+  background: #fff;
+
+  }
+
+       #content header{
+           font-family: 'poppins';
+           grid-area: header;
+           font-size: 36px;
+           padding-top: 80px;
+           padding-bottom: 80px;
+
+       }
+
+       #content main{
+           grid-area: main;
+           align-self: center;
+           justify-self: center;
+       }
+
+       #content footer{
+           grid-area: footer;
+       }
+
+  .gallery{
+
     display: grid;
-    grid-template: 290px 290px
-    / 230px 230px;
-    grid-gap: 5px;
-    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    align-self: center;
+    justify-self: center;
+
   }
+  .gallery img{
 
-  .grid img{
-
-    width: 230px;
-    height: 290px;
+    width: auto;
+    height: 150px;
     background-size: cover;
+    padding: 5px;
+    margin: 0;
+    border-radius: 1px;
+    background-size: cover;
+    object-fit: contain;
 
   }
-}
 
-@media screen and (min-width: 600px) {
-  .grid {
+
+
+  #parallax {
+      background: #FECCCD;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-auto-rows: minmax(100px, 200px, 100px);
+      max-width: 100%;
+      height: 300px;
+      margin: 0 auto;
+
+  }
+  #parallax div{
+    background: #FECCCD;
+
+  }
+
+  #parallax div:nth-child(even){
+
+        background: #FECCCD;
+
+      }
+
+  .name{
+    align-self: end;
+    justify-self: center;
+  }
+
+  .svg-image{
+    width: 75%;
+    height: auto;
+    background: #FECCCD;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .text{
+    align-self: start;
+    justify-self: center;
+  }
+  }
+  @media screen and (min-width: 576px){
+
+  #content{
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-column-gap: 5px;
+      max-width: 576px;
+      margin: 0 auto;
+      grid-template-areas:
+      "header header header header"
+      ". main main ."
+      "footer footer footer footer";
+
+  }
+  #content div{
+    background: #fff;
     display: grid;
-    grid-template: 290px 290px
-    / 230px 230px;
-    grid-gap: 5px;
-    justify-content: center;
-  }
-
-  .grid img{
-
-    width: 230px;
-    height: 290px;
-    background-size: cover;
 
   }
-
-  .parallax {
-      display: flex;
-      /* The image used */
-      background-image: url("../imgs/background@3x.png");
-      width: 100%;
-      /* Set a specific height */
-      min-height: 300px;
-
-      /* Create the parallax scrolling effect */
-      background-attachment:inherit;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+  #content div:nth-child(even){
+    background: #fff;
   }
 
-}
+  #content > *{
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 768px) {
+  background: #fff;
 
-  .grid {
+  }
+
+       #content header{
+           font-family: 'poppins';
+           grid-area: header;
+           font-size: 36px;
+           padding-top: 80px;
+           padding-bottom: 80px;
+
+       }
+
+       #content main{
+           grid-area: main;
+           align-self: center;
+           justify-self: center;
+       }
+
+       #content footer{
+           grid-area: footer;
+       }
+
+  .gallery{
+
     display: grid;
-    grid-template: 360px 360px
-    / 300px 300px;
-    grid-gap: 5px;
-    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    align-self: center;
+    justify-self: center;
+
   }
+  .gallery img{
 
-  .grid img{
-
-    width: 300px;
-    height: 360px;
+    width: auto;
+    height: 150px;
     background-size: cover;
+    padding: 5px;
+    margin: 0;
+    border-radius: 1px;
+    background-size: cover;
+    object-fit: contain;
 
   }
 
-  .parallax {
-      display: flex;
-      /* The image used */
-      background-image: url("../imgs/background@3x.png");
-      width: 100%;
-      /* Set a specific height */
-      min-height: 1024px;
 
-      /* Create the parallax scrolling effect */
-      background-attachment:inherit;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+
+  #parallax {
+      background: #FECCCD;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-auto-rows: minmax(100px, 200px, 100px);
+      max-width: 100%;
+      height: 300px;
+      margin: 0 auto;
+
+  }
+  #parallax div{
+    background: #FECCCD;
+
   }
 
+  #parallax div:nth-child(even){
 
-}
+        background: #FECCCD;
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media screen and (min-width: 992px) {
+      }
 
-  .grid {
+  .name{
+    align-self: end;
+    justify-self: center;
+  }
+
+  .svg-image{
+    width: 50%;
+    height: auto;
+    background: #FECCCD;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .text{
+    align-self: start;
+    justify-self: center;
+  }
+  }
+
+  @media screen and (min-width: 768px){
+
+  #content{
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-column-gap: 5px;
+      max-width: 768px;
+      margin: 0 auto;
+      grid-template-areas:
+      "header header header header"
+      ". main main ."
+      "footer footer footer footer";
+
+  }
+  #content div{
+    background: #fff;
     display: grid;
-    grid-template: 360px 360px 360px
-    / 300px 300px 300px;
-    grid-gap: 5px;
-    justify-content: center;
+
+  }
+  #content div:nth-child(even){
+    background: #fff;
   }
 
-  .grid img{
+  #content > *{
 
-    width: 300px;
-    height: 360px;
+  background: #fff;
+
+  }
+
+       #content header{
+           font-family: 'poppins';
+           grid-area: header;
+           font-size: 36px;
+           padding-top: 80px;
+           padding-bottom: 80px;
+
+       }
+
+       #content main{
+           grid-area: main;
+           align-self: center;
+           justify-self: center;
+       }
+
+       #content footer{
+           grid-area: footer;
+       }
+
+  .gallery{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    align-self: center;
+    justify-self: center;
+
+  }
+  .gallery img{
+
+    width: auto;
+    height: 200px;
     background-size: cover;
-
-  }
-
-  .parallax {
-      display: flex;
-      /* The image used */
-      background-image: url("../imgs/background@3x.png");
-      width: 100%;
-      /* Set a specific height */
-      min-height: 1440px;
-
-      /* Create the parallax scrolling effect */
-      background-attachment: inherit;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
-
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
-
-  .grid{
-
-  display: grid;
-  grid-template: 260px 260px 260px 260px
-  / 200px 200px 200px 200px;
-  grid-gap: 5px;
-  justify-content: center;
-
-
-  }
-  .grid img{
-
-    width: 200px;
-    height: 260px;
+    padding: 5px;
+    margin: 0;
+    border-radius: 1px;
     background-size: cover;
-
+    object-fit: contain;
 
   }
 
-  .parallax {
-      display: flex;
-      /* The image used */
-      background-image: url("../imgs/background@3x.png");
-      width: 100%;
-      /* Set a specific height */
-      min-height: 1440px;
 
-      /* Create the parallax scrolling effect */
-      background-attachment: inherit;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+
+  #parallax {
+      background: #FECCCD;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-auto-rows: minmax(100px, 200px, 100px);
+      max-width: 100%;
+      height: 300px;
+      margin: 0 auto;
+
   }
+  #parallax div{
+    background: #FECCCD;
+
+  }
+
+  #parallax div:nth-child(even){
+
+        background: #FECCCD;
+
+      }
+
+  .name{
+    align-self: end;
+    justify-self: center;
+  }
+
+  .svg-image{
+    width: 65%;
+    height: auto;
+    background: #FECCCD;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .text{
+    align-self: start;
+    justify-self: center;
+  }
+  }
+
+  @media screen and (min-width: 992px){
+
+  #content{
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-column-gap: 5px;
+      max-width: 992px;
+      margin: 0 auto;
+      grid-template-areas:
+      "header header header header"
+      ". main main ."
+      "footer footer footer footer";
+
+  }
+  #content div{
+    background: #fff;
+    display: grid;
+
+  }
+  #content div:nth-child(even){
+    background: #fff;
+  }
+
+  #content > *{
+
+  background: #fff;
 
 }
-.parallax {
-    display: flex;
-    /* The image used */
-    background-image: url("../imgs/background@3x.png");
-    width: 100%;
-    /* Set a specific height */
-    min-height: 1440px;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+       #content header{
+           font-family: 'poppins';
+           grid-area: header;
+           font-size: 36px;
+           padding-top: 80px;
+           padding-bottom: 80px;
+
+       }
+
+       #content main{
+           grid-area: main;
+           align-self: center;
+			     justify-self: center;
+       }
+
+       #content footer{
+           grid-area: footer;
+       }
+
+  .gallery{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-self: center;
+    justify-self: center;
+
+  }
+  .gallery img{
+
+    width: auto;
+    height: 180px;
     background-size: cover;
+    padding: 5px;
+    margin: 0;
+    background-size: cover;
+    object-fit: contain;
+
+  }
+
+
+
+  #parallax {
+      background: #FECCCD;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-auto-rows: minmax(100px, 200px, 100px);
+      max-width: 100%;
+      height: 300px;
+      margin: 0 auto;
+
+  }
+  #parallax div{
+    background: #FECCCD;
+
+  }
+
+  #parallax div:nth-child(even){
+
+        background: #FECCCD;
+
+      }
+
+  .name{
+    align-self: end;
+    justify-self: center;
+  }
+
+  .svg-image{
+    width: 75%;
+    height: auto;
+    background: #FECCCD;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .text{
+    align-self: start;
+    justify-self: center;
+  }
 }
 
+  @media screen and (min-width: 1200px){
 
-.header {
-  color: #000;
-  font-size: 36px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  #content{
 
-}
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-column-gap: 5px;
+      max-width: 1200px;
+      margin: 0 auto;
+      grid-template-areas:
+      "header header header header"
+      ". main main ."
+      "footer footer footer footer";
 
+  }
+  #content div{
+    background: #fff;
+    display: grid;
 
-* {
-  box-sizing: border-box;
-}
+  }
+  #content div:nth-child(even){
+    background: #fff;
+  }
 
-.row > .column {
-  padding: 8 8px;
-}
+  #content > *{
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  display: flex;
-  float: left;
-  width: 25%;
-  height: 150px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  padding-top: 50px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
-  overflow: auto;
-  background-color: white;
-}
-
-/* Modal Content */
-.modal-content {
-  position:relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 70%;
-  max-width: 70%;
+  background: #fff;
 
 }
 
-/* The Close Button */
-.close {
-  color: #fff;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
+       #content header{
+           font-family: 'poppins';
+           grid-area: header;
+           font-size: 36px;
+           padding-top: 80px;
+           padding-bottom: 80px;
+
+       }
+
+       #content main{
+           grid-area: main;
+           align-self: center;
+			     justify-self: center;
+       }
+
+       #content footer{
+           grid-area: footer;
+       }
+
+  .gallery{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-self: center;
+    justify-self: center;
+
+  }
+  .gallery img{
+
+    width: auto;
+    height: 200px;
+    background-size: cover;
+    padding: 5px;
+    margin: 0;
+    background-size: cover;
+    object-fit: contain;
+
+  }
+
+
+
+  #parallax {
+      background: #FECCCD;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-auto-rows: minmax(100px, 200px, 100px);
+      max-width: 100%;
+      height: 300px;
+      margin: 0 auto;
+
+  }
+  #parallax div{
+    background: #FECCCD;
+
+  }
+
+  #parallax div:nth-child(even){
+
+        background: #FECCCD;
+
+      }
+
+  .name{
+    align-self: end;
+    justify-self: center;
+  }
+
+  .svg-image{
+    width: 75%;
+    height: auto;
+    background: #FECCCD;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .text{
+    align-self: start;
+    justify-self: center;
+  }
 }
 
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
+  @media screen and (min-width: 1440px){
+
+  #content{
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-column-gap: 5px;
+      max-width: 1440px;
+      margin: 0 auto;
+      grid-template-areas:
+      "header header header header"
+      ". main main ."
+      "footer footer footer footer";
+
+  }
+  #content div{
+    background: #fff;
+    display: grid;
+
+  }
+  #content div:nth-child(even){
+    background: #fff;
+  }
+
+  #content > *{
+
+  background: #fff;
+
 }
 
+       #content header{
+           font-family: 'poppins';
+           grid-area: header;
+           font-size: 36px;
+           padding-top: 80px;
+           padding-bottom: 80px;
 
-.cursor {
-  cursor: pointer;
-  color: #fff;
+       }
 
-}
+       #content main{
+           grid-area: main;
+           align-self: center;
+			     justify-self: center;
+       }
+
+       #content footer{
+           grid-area: footer;
+       }
+
+  .gallery{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-self: center;
+    justify-self: center;
+
+  }
+  .gallery img{
+
+    width: auto;
+    height: 250px;
+    background-size: cover;
+    padding: 5px;
+    margin: 0;
+    border-radius: 1px;
+    background-size: cover;
+    object-fit: contain;
+
+  }
 
 
 
+  #parallax {
+      background: #FECCCD;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-auto-rows: minmax(100px, 200px, 100px);
+      max-width: 100%;
+      height: 300px;
+      margin: 0 auto;
 
-/* Next & previous buttons */
-.prev,
+  }
+  #parallax div{
+    background: #FECCCD;
 
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
+  }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+  #parallax div:nth-child(even){
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
+        background: #FECCCD;
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+      }
 
-img {
-  margin-bottom: -4px;
-}
+  .name{
+    align-self: end;
+    justify-self: center;
+  }
 
-.caption-container {
-  text-align: center;
-  background-color: white;
-  padding: 5px 20px;
-  color: white;
-}
+  .svg-image{
+    width: 80%;
+    height: auto;
+    background: #FECCCD;
+    align-self: center;
+    justify-self: center;
+  }
 
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  .text{
+    align-self: start;
+    justify-self: center;
+  }
 }
